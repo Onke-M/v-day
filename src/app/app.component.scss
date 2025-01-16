@@ -1,4 +1,19 @@
-.example-button-row {
-    display: table-cell;
-    max-width: 600px;
-  }
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

@@ -177,22 +177,19 @@
   }
 </style>
 
-<main class="main">
+<main>
   <div>
-    <div *ngIf="showQuestion">
-      <img src="/question.gif"/>
-    </div>
-    <div *ngIf="showYes">
-      <img src="/yes.gif"/>
-    </div>
-    <div *ngIf="showNo">
-      <img src="/no.gif"/>
-    </div>
-    <h2>{{this.question}}</h2>
-    <div class="example-button-row">
-      <button mat-button (click)="showYesButton()">Yes</button>
-      <button mat-button (click)="showNoButton()">No</button>
-    </div>
+      <img class="img" *ngIf="showQuestionPhoto" src="/question.gif"/>
+      <img class="img" *ngIf="showYesPhoto" src="/yes.gif"/>
+      <img class="img" *ngIf="showNoPhoto" src="/no.gif"/>
+      <h2 style="text-align: center;">{{this.question}}</h2>
+      <div class="container">
+        <div class="button-wrapper">
+          <button mat-button [style.fontSize.px]="yesButtonSize" *ngIf="showYesButton" (click)="handleYes()">Yes</button>
+          <button mat-button *ngIf="showNoButton" (click)="handleNo()">{{noCount === 0 ? "No" : getNoButtonText()}}</button>
+        </div>
+      </div>
+    
   </div>
 </main>
 
