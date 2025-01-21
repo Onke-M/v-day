@@ -46,6 +46,12 @@ export class AppComponent implements OnInit{
       "please babe",
       ":((((",
       "PRETTY PLEASE",
+      "I'm BEGGING you",
+      "I'm literally on my knees",
+      "Why do you hate me?",
+      "So it's a no fr?",
+      "I thought we had something special",
+      "Fine, I'll see myself out then",
       "No :(",
     ];
 
